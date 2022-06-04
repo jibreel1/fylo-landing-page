@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+.flex__center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.p__opensans {
+   font-family: var(--font-opensans);
+   color: var(--color-white);
+   font-weight: 400;
+   letter-spacing: 0.04em;
+   line-height: 25px;
+   font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headtext__raleway {
+   font-family: var(--font-raleway);
+   color: var(--color-white);
+   font-size: 28px;
+   font-weight: 700;
+   line-height: 42px;
+   letter-spacing: 0.04em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.custom_btn {
+   font-family: var(--font-raleway);
+   color: var(--color-white);
+   background: linear-gradient(to right, var(--cyan), var(--blue));
+   border: none;
+   padding: 18px 80px;
+   border-radius: 50px;
+   font-size: 14px;
+   cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.custom_btn:hover {
+   background: var(--cyan);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1150px) {
+   .p__opensans {
+      line-height: 22px;
+      font-size: 13px;
+   }
+
+   .headtext__raleway {
+      font-size: 22px;
+      line-height: 35px;
+   }
+}
+
+@media screen and (max-width: 650px) {
 }

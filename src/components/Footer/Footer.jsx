@@ -5,7 +5,13 @@ import Images from "../../constants/images";
 import "./Footer.css";
 
 const SignIn = () => (
-   <div className="sign-in flex__center" id="signIn">
+   <div
+      style={{ transform: "translate(-50%, -50%)" }}
+      className="sign-in flex__center"
+      id="signIn"
+      data-aos="zoom-in"
+      data-aos-duration="3000"
+   >
       <h1 className="headtext__raleway">Get early access today</h1>
       <p className="p__opensans">
          It only takes a minute to sign up and our free starter tier is

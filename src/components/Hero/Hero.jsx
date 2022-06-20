@@ -5,10 +5,10 @@ import "./Hero.css";
 const Hero = () => {
    return (
       <div className="hero flex__center">
-         <div className="hero-img">
+         <div className="hero-img" data-aos="fade-right">
             <img src={Images.intro} alt="" />
          </div>
-         <div className="hero-text ">
+         <div className="hero-text " data-aos="fade-left">
             <h1 className="headtext__raleway">
                All your files in one secure location, accessible anywhere.
             </h1>

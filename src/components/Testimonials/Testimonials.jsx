@@ -5,7 +5,7 @@ import Images from "../../constants/images";
 import "./Testimonial.css";
 
 const TestimonialCard = ({ testimonial: { content, img, name, position } }) => (
-   <div className="card">
+   <div className="card" data-aos="fade-up" data-aos-duration="2000">
       <p className="p__opensans">{content}</p>
       <div className="card_author">
          <img src={img} alt="author" />

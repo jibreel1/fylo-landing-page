@@ -5,7 +5,7 @@ import Images from "../../constants/images";
 import "./Features.css";
 
 const FeatureCard = ({ feature: { img, title, subtitle } }) => (
-   <div className="features_card">
+   <div className="features_card" data-aos="zoom-in">
       <img src={img} alt="" />
       <h1 className="headtext__raleway">{title}</h1>
       <p className="p__opensans">{subtitle}</p>
@@ -25,8 +25,9 @@ const Features = () => {
                className="article_img"
                src={Images.stayProductive}
                alt="stayProductive"
+               data-aos="fade-up-right"
             />
-            <div className="article_content">
+            <div className="article_content" data-aos="fade-up-left">
                <h1 className="headtext__raleway">
                   Stay productive, wherever you are
                </h1>
